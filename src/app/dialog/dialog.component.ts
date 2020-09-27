@@ -15,6 +15,7 @@ export class DialogData {
 @Component({
   selector: 'dialog',
   templateUrl: './dialog.component.html',
+  styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent {
   public coor: DialogData;
