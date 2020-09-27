@@ -4,9 +4,8 @@ import { AppService } from './app.service'
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
-import { OVERLAY_PROVIDERS } from "@angular/cdk/overlay";
 import { SearchPipe } from './search.pipe';
 import { FormsModule } from '@angular/forms';
 
@@ -23,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     MatDialogModule,
     FormsModule
   ],
-  providers: [AppService, HttpClient, MatDialog, OVERLAY_PROVIDERS],
+  providers: [AppService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
