@@ -13,7 +13,7 @@
       <th><input [(ngModel)]="searchEmail" /></th>
       <th><input [(ngModel)]="searchAddress" /></th>
     </tr>
-    <tr *ngFor="let l of user | search:searchName:searchEmail:searchAddress" (click)="onShow(l)">
+    <tr *ngFor="let l of user | search:searchName:searchEmail:searchAddress">
       <td>{{l?.name}} ({{l?.username}})</td>
       <td>{{l?.email}}</td>
       <td>{{l?.address?.zipcode}} {{l?.address?.city}} {{l?.address?.street}} {{l?.address?.suite}}</td>
